@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أدوات الرؤية الحاسوبية مفتوحة المصدر - Open Source Computer Vision Tools</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-eye"></i>
+                    <h1 data-ar="أدوات الرؤية الحاسوبية" data-en="Computer Vision Tools">أدوات الرؤية الحاسوبية</h1>
+                </div>
+                <div class="nav-menu">
+                    <button class="language-toggle" onclick="toggleLanguage()">
+                        <i class="fas fa-globe"></i>
+                        <span id="lang-text">EN</span>
+                    </button>
+                    <button class="theme-toggle" onclick="toggleTheme()">
+                        <i class="fas fa-moon" id="theme-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2 data-ar="اكتشف أقوى أدوات الرؤية الحاسوبية مفتوحة المصدر" data-en="Discover the Most Powerful Open Source Computer Vision Tools">
+                اكتشف أقوى أدوات الرؤية الحاسوبية مفتوحة المصدر
+            </h2>
+            <p data-ar="مجموعة شاملة من أحدث مكتبات وأدوات الرؤية الحاسوبية المجانية للمطورين والباحثين" data-en="A comprehensive collection of the latest free computer vision libraries and tools for developers and researchers">
+                مجموعة شاملة من أحدث مكتبات وأدوات الرؤية الحاسوبية المجانية للمطورين والباحثين
+            </p>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="البحث عن الأدوات..." data-placeholder-ar="البحث عن الأدوات..." data-placeholder-en="Search for tools...">
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all" data-ar="الكل" data-en="All">الكل</button>
+                    <button class="filter-btn" data-filter="deep-learning" data-ar="التعلم العميق" data-en="Deep Learning">التعلم العميق</button>
+                    <button class="filter-btn" data-filter="computer-vision" data-ar="رؤية حاسوبية" data-en="Computer Vision">رؤية حاسوبية</button>
+                    <button class="filter-btn" data-filter="detection" data-ar="كشف الأجسام" data-en="Object Detection">كشف الأجسام</button>
+                    <button class="filter-btn" data-filter="processing" data-ar="معالجة الصور" data-en="Image Processing">معالجة الصور</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Grid -->
+    <section class="tools-section">
+        <div class="container">
+            <div class="tools-grid" id="toolsGrid">
+                <!-- Tools will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-ar="حول الموقع" data-en="About">
+                        حول الموقع
+                    </h3>
+                    <p data-ar="منصة شاملة لاكتشاف أفضل أدوات الرؤية الحاسوبية مفتوحة المصدر" data-en="A comprehensive platform to discover the best open source computer vision tools">
+                        منصة شاملة لاكتشاف أفضل أدوات الرؤية الحاسوبية مفتوحة المصدر
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-ar="روابط مفيدة" data-en="Useful Links">
+                        روابط مفيدة
+                    </h3>
+                    <ul>
+                        <li><a href="https://opencv.org/" target="_blank">OpenCV</a></li>
+                        <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                        <li><a href="https://tensorflow.org/" target="_blank">TensorFlow</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-ar="تواصل معنا" data-en="Contact">
+                        تواصل معنا
+                    </h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 <span data-ar="أدوات الرؤية الحاسوبية. جميع الحقوق محفوظة." data-en="Computer Vision Tools. All rights reserved.">أدوات الرؤية الحاسوبية. جميع الحقوق محفوظة.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
