@@ -267,13 +267,13 @@ function createToolCard(tool) {
             </div>
             
             <div class="tool-links">
-                <a href="${tool.github}" target="_blank" class="tool-link primary">
+                <a href="${tool.github}" target="_blank" rel="noopener noreferrer" class="tool-link primary">
                     <i class="fab fa-github"></i>
                     <span data-ar="كود المصدر" data-en="Source Code">
                         ${currentLanguage === 'ar' ? 'كود المصدر' : 'Source Code'}
                     </span>
                 </a>
-                <a href="${tool.website}" target="_blank" class="tool-link secondary">
+                <a href="${tool.website}" target="_blank" rel="noopener noreferrer" class="tool-link secondary">
                     <i class="fas fa-external-link-alt"></i>
                     <span data-ar="الموقع الرسمي" data-en="Website">
                         ${currentLanguage === 'ar' ? 'الموقع الرسمي' : 'Website'}
