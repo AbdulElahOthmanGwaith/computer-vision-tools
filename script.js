@@ -193,6 +193,22 @@ const searchInput = document.getElementById('searchInput');
 const filterButtons = document.querySelectorAll('.filter-btn');
 const langToggle = document.querySelector('.language-toggle');
 const themeToggle = document.querySelector('.theme-toggle');
+let resultsCounter = null;
+
+function updateResultsCounter() {
+    if (!resultsCounter) {
+        resultsCounter = document.createElement('p');
+        resultsCounter.className = 'results-counter';
+        resultsCounter.setAttribute('aria-live', 'polite');
+        const section = document.querySelector('.search-section');
+        if (section) section.appendChild(resultsCounter);
+    }
+    if (resultsCounter) {
+        resultsCounter.textContent = currentLanguage === 'ar'
+            ? `عرض ${filteredTools.length} من ${tools.length} أداة`
+            : `Showing ${filteredTools.length} of ${tools.length} tools`;
+    }
+}
 
 // Initialize the application
 function init() {
@@ -221,6 +237,7 @@ function setupEventListeners() {
 
 // Render tools to the grid
 function renderTools() {
+    updateResultsCounter();
     if (filteredTools.length === 0) {
         toolsGrid.innerHTML = `
             <div class="no-results">
